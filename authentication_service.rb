@@ -6,6 +6,6 @@ class AuthenticationService
   end
 
   def authenticate(message)
-    @client.call(message: message)
+    @client.call(:authenticate, message: message)
   end
 end
